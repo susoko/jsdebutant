@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Jsfornoob by GManzato</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Jsfornoob</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/GManzato/jsfornoob">View the Project on GitHub <small>GManzato/jsfornoob</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/GManzato/jsfornoob/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/GManzato/jsfornoob/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/GManzato/jsfornoob">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="javascript-pour-les-débutants" class="anchor" href="#javascript-pour-les-d%C3%A9butants" aria-hidden="true"><span class="octicon octicon-link"></span></a>Javascript pour les débutants</h1>
+
+<h2>
+<a id="1-javascript" class="anchor" href="#1-javascript" aria-hidden="true"><span class="octicon octicon-link"></span></a>1. Javascript</h2>
+
+<h3>
+<a id="pourquoi-le-javascript-" class="anchor" href="#pourquoi-le-javascript-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pourquoi le javascript ?</h3>
+
+<p>Le javascript est un language à la fois simple d'approche et facile à utiliser pour les débutant mais très puissant et complexe pour les experts. Il fonctionne sur tout les navigateurs modernes ( front-end ) ainsi que coté serveur ( back-end ) avec Node.js.</p>
+
+<h3>
+<a id="les-outils" class="anchor" href="#les-outils" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les outils</h3>
+
+<p><strong>Votre navigateur</strong> contient déja tout pour vos premières lignes de javascript, un simple <code>CMD+MAJ+J</code> sur MAC ou <code>CTRL+MAJ+J</code> sur Windows/Linux ouvre la console sur votre navigateur chrome.</p>
+
+<blockquote>
+<p>Ouvrez Chrome, et la console et écrivez <code>alert('Hello Le Wagon')</code>.</p>
+</blockquote>
+
+<p><strong>jsFiddle</strong> : un éditeur en ligne --&gt; <a href="http://jsfiddle.net/">http://jsfiddle.net/</a></p>
+
+<p>Un editeur de texte comme <strong>Sublime Text</strong> ou <strong>Atom</strong> ( qui est d'ailleur écrit entièrement en javascript ) ou simplement Notepad ou Textedit.</p>
+
+<h3>
+<a id="les-variables" class="anchor" href="#les-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les variables</h3>
+
+<p>Une variable est un identifiant ( unique ) permetant de stocker une donnée ( texte , nombre ou autre )</p>
+
+<p>Pour créer une variable, il faut utiliser l'operateur <code>var</code></p>
+
+<blockquote>
+<p>Dans la console : <code>var maVariable</code> ensuite <code>maVariable</code></p>
+</blockquote>
+
+<p>Dans cet exemple nous venons de créer une variable vide, d'où la réponse <code>undefined</code> de la console, nous allons voir comment lui attribuer une donnée ( une assignation )</p>
+
+<h3>
+<a id="les-types" class="anchor" href="#les-types" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les types</h3>
+
+<p>Javascript est un language non typé, ça veut dire que l'on est pas obligé de renseigner à l'avance ce que notre variable va contenir, c'est ce que l'on lui assigne qui va renseigner son type</p>
+
+<ul>
+<li>
+<code>number</code> : contient un <strong>nombre</strong>
+</li>
+<li>
+<code>string</code> : contient du <strong>texte</strong>, toujours entourés de simple (<code>'</code>) ou double guillements(<code>"</code>)</li>
+<li>
+<code>boolean</code> : peut contenir <strong>true</strong> ou <strong>false</strong>, vrai ou faux.</li>
+</ul>
+
+<blockquote>
+<p>Dans la console : <code>typeof(4)</code> , <code>typeof('Hello')</code>, <code>typeof(true)</code></p>
+</blockquote>
+
+<p>j'ai volontairement omis les autres, on les verra plus tard</p>
+
+<h3>
+<a id="les-opérateurs" class="anchor" href="#les-op%C3%A9rateurs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les opérateurs</h3>
+
+<h5>
+<a id="lopérateur-dassignation" class="anchor" href="#lop%C3%A9rateur-dassignation" aria-hidden="true"><span class="octicon octicon-link"></span></a>L'opérateur d'assignation</h5>
+
+<p><code>=</code> permet d'assigner une donnée à une variable ( à ne pas confondre avec l'égalité en mathématique )</p>
+
+<blockquote>
+<p>Dans la console <code>maVariable = "Bonjour"</code></p>
+</blockquote>
+
+<p>Il en existe d'autres comme <code>+=</code>,<code>-=</code>...</p>
+
+<h5>
+<a id="les-opérateurs-arithmétiques" class="anchor" href="#les-op%C3%A9rateurs-arithm%C3%A9tiques" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les opérateurs arithmétiques</h5>
+
+<p>Ce sont simplement les signes mathématiques que l'on connait depuis l'école primaire: <strong>addition, soustraction, multiplication et division</strong>.</p>
+
+<ul>
+<li>
+<code>+</code> : Addition</li>
+<li>
+<code>-</code> : Soustraction</li>
+<li>
+<code>/</code> : Division</li>
+<li>
+<code>*</code> : Multiplication, ne pas utiliser le <code>x</code> qui n'est qu'un simple caractère</li>
+<li>
+<code>%</code> : Modulo, le reste d'une division</li>
+</ul>
+
+<blockquote>
+<p>Dans la console : <code>10+10</code>,<code>5*3</code>,<code>10/10</code>,<code>10-3</code>,<code>9%2</code></p>
+</blockquote>
+
+<h5>
+<a id="les-opérateurs-de-comparaison" class="anchor" href="#les-op%C3%A9rateurs-de-comparaison" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les opérateurs de comparaison</h5>
+
+<p>Les opérateurs de comparaison retourne un booléen, donc un vrai ou un faux.</p>
+
+<ul>
+<li>
+<code>==</code> : égal ( <code>===</code> égalité stricte )</li>
+<li>
+<code>!=</code> : non égal</li>
+<li>
+<code>&gt;</code> : supérieur ( <code>&gt;=</code> , supérieur ou égal )</li>
+<li>
+<code>&lt;</code> : inférieur ( <code>&lt;=</code> , inférieur ou égal )</li>
+</ul>
+
+<blockquote>
+<p>Dans la console vous pouvez tester tout les opérateurs avec des valeurs <code>5&gt;3</code> , <code>5 == "5"</code></p>
+</blockquote>
+
+<p>Si vous voulez en savoir plus sur les <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript/Guide/Expressions_et_Op%C3%A9rateurs">Expressions et Opérateurs</a></p>
+
+<h3>
+<a id="les-fonctions" class="anchor" href="#les-fonctions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les fonctions</h3>
+
+<p>TODO</p>
+
+<h3>
+<a id="if" class="anchor" href="#if" aria-hidden="true"><span class="octicon octicon-link"></span></a>IF</h3>
+
+<p>TODO</p>
+
+<h3>
+<a id="le-dom" class="anchor" href="#le-dom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Le DOM</h3>
+
+<p>Le DOM = Document Object Model, en plus simple c'est ce qu'il y a sous le capot du navigateur, un emsemble d'information sous forme d'un arbre avec des noeuds qui représentent chaque partie d'une page HTML. C'est la ou sont stockée la taille, la couleur et d'autre information pour chaque balise html d'une page web.</p>
+
+<blockquote>
+<p>Ouvrez la console, cliquez sur <strong>"Elements"</strong> , séléctionez une balise html ( par exemple <code>&lt;body&gt;</code> ) et ensuite cliquez sur <strong>"Propriétés"</strong> dans le bloc de droite, voila c'est ça le DOM</p>
+</blockquote>
+
+<p>Le javascript peut interagir avec le DOM de la page pour modifier des informations. Mais il y a un grand MAIS, le DOM est en partie standardisé mais pas completement sur tout les navigateurs ( même parfois entre version ). En plus simple, il faut adapter le code selon le navigateur dans certains cas, ce qui demande une certaine expérience et ralentit le developpement.</p>
+
+<h2>
+<a id="2-jquery" class="anchor" href="#2-jquery" aria-hidden="true"><span class="octicon octicon-link"></span></a>2. jQuery</h2>
+
+<h3>
+<a id="cest-quoi-jquery-" class="anchor" href="#cest-quoi-jquery-" aria-hidden="true"><span class="octicon octicon-link"></span></a>C'est quoi jQuery ?</h3>
+
+<p>jQuery est une librairie qui permet de faciliter l'usage du javascript, simplifie et accèlere le developpement, et surtout améliore la compatibilité entre les navigateurs.</p>
+
+<p>La documentation complète de jQuery : <a href="http://api.jquery.com/">api.jquery.com</a></p>
+
+<h3>
+<a id="le-selecteur" class="anchor" href="#le-selecteur" aria-hidden="true"><span class="octicon octicon-link"></span></a>Le selecteur</h3>
+
+<p>En javascript pur, selectionner un noeud HTML est une tache pénible et compliquée.</p>
+
+<p>En jQuery, le selecteur utilise la logique des sélécteurs CSS.</p>
+
+<blockquote>
+<p>Ouvrez <a href="http://jsfiddle.net/">jsFiddle</a></p>
+
+<p>Dans la case "javascript", écrivez <code>$('.montitre')</code></p>
+
+<p>Rien ne se passe ? Normal nous avons séléctionné notre élément mais rien de plus</p>
+
+<p>On ajoute <code>console.log($('.montitre'))</code> , on survole l'élément dans la fenetre firebug, et notre élément devient jaune dans la page, c'est bon il est sélectionné !
+Si l'on veut changer la couleur de la page il sufft d'utiliser la methode <code>css()</code>sur notre élément.  <code>$('.montitre').css('color','red')</code></p>
+</blockquote>
+
+<p><a href="http://api.jquery.com/category/selectors/">En savoir plus sur les selecteurs dans la doc de jquery</a></p>
+
+<h3>
+<a id="les-évenements" class="anchor" href="#les-%C3%A9venements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les évenements</h3>
+
+<p>jQuery facilite l'utilisation des évenements, donc capter les interactions de l'utilisateur avec notre page web.</p>
+
+<blockquote>
+<p>Retournons à notre fiddle,avec le selecteur nous allons selectionner le bouton et lui ajouter un événement pour modifier la couleur du titre de la page</p>
+
+<pre><code>$('.btn').click(function(){
+    $('.montitre').css('color','red');
+});
+</code></pre>
+
+<p>un click sur le bouton "go" et la couleur passe au rouge !</p>
+</blockquote>
+
+<h3>
+<a id="les-requêtes-ajax" class="anchor" href="#les-requ%C3%AAtes-ajax" aria-hidden="true"><span class="octicon octicon-link"></span></a>Les requêtes ajax</h3>
+
+<h2>
+<a id="3-introduction-aux-frameworks--emberjs" class="anchor" href="#3-introduction-aux-frameworks--emberjs" aria-hidden="true"><span class="octicon octicon-link"></span></a>3. Introduction aux frameworks : ember.js</h2>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/GManzato">GManzato</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
