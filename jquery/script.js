@@ -1,0 +1,3 @@
+$(function(){
+  $.getJSON('exemple.json');
+});

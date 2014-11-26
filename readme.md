@@ -72,11 +72,25 @@ Si vous voulez en savoir plus sur les [Expressions et Opérateurs](https://devel
 
 ### Les fonctions
 
-TODO
+Une fonction est un morceau de code écrit dans l'optique de pouvoir être reutilisé
 
-### IF
+```
+  var mafunction = function(name){
+    return "Bonjour " + name;
+  }
+```
 
-TODO
+### Les conditions
+
+```
+var nombre = 10;
+if(nombre >= 5){
+    console.log('plus grand que 5')
+}
+else {
+    console.log('plus petit que 5')
+}
+```
 
 ### Le DOM
 
@@ -117,15 +131,35 @@ jQuery facilite l'utilisation des évenements, donc capter les interactions de l
 
 > Retournons à notre fiddle,avec le selecteur nous allons selectionner le bouton et lui ajouter un événement pour modifier la couleur du titre de la page
 ```
-$('.btn').click(function(){
+$('.btn').on('click',function(){
     $('.montitre').css('color','red');
 });
 ```
 >un click sur le bouton "go" et la couleur passe au rouge !
 
+[En savoir plus sur les évenements dans la doc de jquery](http://api.jquery.com/category/events/)
+
+### Les effets et les animations
+
+Maintenant que nous pouvons gerer des évenements, nous allons animer l'ouverture et la fermeture d'un bloc dans notre page fiddle.
+
+> Dans jsFiddle : Vous l'avez peut-etre remarqué mais un paragraphe n'est pas affiché dans le resultat de notre page. Nous allons l'afficher lors du click sur le bouton.
+```
+$('.btn').on('click',function(){
+    $('.spoiler').show();
+});
+```
+
+Et si on le faisait apparaitre en slide ? il suffit d'utiliser la méthode slide `slideDown()`! Et si on veut le refermer ensuite ? On peut alors utiliser `slideToggle()`.
+
+[En savoir plus sur les effets dans la doc de jquery](http://api.jquery.com/category/effects/)
 
 ### Les requêtes ajax
 
+##### C'est quoi l'AJAX
 
+Asynchronous JavaScript and XML, derrière cette abréviation barbare se trouve un moyen de charger des données sans devoir rafraichir completement la page.
 
-## 3. Introduction aux frameworks : ember.js
+jQuery dispose d'une fonction `$.ajax`
+
+[En savoir plus sur les effets dans la doc de jquery](http://api.jquery.com/category/effects/)

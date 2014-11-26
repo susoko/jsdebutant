@@ -1,0 +1,31 @@
+{
+   "4": {
+      "id": "4",
+      "first_name": "Mark",
+      "gender": "male",
+      "last_name": "Zuckerberg",
+      "link": "https://www.facebook.com/zuck",
+      "locale": "en_US",
+      "name": "Mark Zuckerberg",
+      "username": "zuck"
+   },
+   "5": {
+      "id": "5",
+      "first_name": "Chris",
+      "gender": "male",
+      "last_name": "Hughes",
+      "link": "https://www.facebook.com/ChrisHughes",
+      "locale": "en_US",
+      "name": "Chris Hughes",
+      "username": "ChrisHughes"
+   },
+   "6": {
+      "id": "6",
+      "first_name": "Dustin",
+      "gender": "male",
+      "last_name": "Moskovitz",
+      "locale": "en_US",
+      "name": "Dustin Moskovitz",
+      "username": "moskov"
+   }
+}
